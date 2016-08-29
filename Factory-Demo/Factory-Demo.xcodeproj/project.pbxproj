@@ -7,25 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79F327F61D73EA87003F906D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F327F51D73EA87003F906D /* main.m */; };
-		79F327F91D73EA87003F906D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F327F81D73EA87003F906D /* AppDelegate.m */; };
-		79F327FC1D73EA87003F906D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F327FB1D73EA87003F906D /* ViewController.m */; };
-		79F327FF1D73EA87003F906D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F327FD1D73EA87003F906D /* Main.storyboard */; };
-		79F328011D73EA87003F906D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F328001D73EA87003F906D /* Assets.xcassets */; };
-		79F328041D73EA87003F906D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F328021D73EA87003F906D /* LaunchScreen.storyboard */; };
+		79F328191D740E1D003F906D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3280D1D740E1D003F906D /* AppDelegate.m */; };
+		79F3281A1D740E1D003F906D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328101D740E1D003F906D /* ViewController.m */; };
+		79F3281B1D740E1D003F906D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79F328121D740E1D003F906D /* Assets.xcassets */; };
+		79F3281C1D740E1D003F906D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F328131D740E1D003F906D /* LaunchScreen.storyboard */; };
+		79F3281D1D740E1D003F906D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79F328151D740E1D003F906D /* Main.storyboard */; };
+		79F3281E1D740E1D003F906D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 79F328171D740E1D003F906D /* Info.plist */; };
+		79F3281F1D740E1D003F906D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328181D740E1D003F906D /* main.m */; };
+		79F328251D740FA7003F906D /* SFOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328241D740FA7003F906D /* SFOperation.m */; };
+		79F328281D740FC9003F906D /* SFOperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328271D740FC9003F906D /* SFOperationAdd.m */; };
+		79F3282B1D740FE6003F906D /* SFOperationSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3282A1D740FE6003F906D /* SFOperationSub.m */; };
+		79F3282E1D741008003F906D /* SFOperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3282D1D741008003F906D /* SFOperationMul.m */; };
+		79F328311D74101E003F906D /* SFOperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328301D74101E003F906D /* SFOperationDiv.m */; };
+		79F328341D74165C003F906D /* SFOperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328331D74165C003F906D /* SFOperationFactory.m */; };
+		79F3283F1D743148003F906D /* FMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328361D743148003F906D /* FMOperation.m */; };
+		79F328401D743148003F906D /* FMOperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328381D743148003F906D /* FMOperationAdd.m */; };
+		79F328411D743148003F906D /* FMOperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3283A1D743148003F906D /* FMOperationDiv.m */; };
+		79F328421D743148003F906D /* FMOperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3283C1D743148003F906D /* FMOperationMul.m */; };
+		79F328431D743148003F906D /* FMOperationSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3283E1D743148003F906D /* FMOperationSub.m */; };
+		79F328461D743242003F906D /* FMFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328451D743242003F906D /* FMFactory.m */; };
+		79F328491D74329A003F906D /* FMFactoryAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328481D74329A003F906D /* FMFactoryAdd.m */; };
+		79F3284C1D7432AF003F906D /* FMFactorySub.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3284B1D7432AF003F906D /* FMFactorySub.m */; };
+		79F3284F1D7432BC003F906D /* FMFactoryMul.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3284E1D7432BC003F906D /* FMFactoryMul.m */; };
+		79F328521D7432C4003F906D /* FMFactoryDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328511D7432C4003F906D /* FMFactoryDiv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		79F327F11D73EA87003F906D /* Factory-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Factory-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		79F327F51D73EA87003F906D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		79F327F71D73EA87003F906D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		79F327F81D73EA87003F906D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		79F327FA1D73EA87003F906D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		79F327FB1D73EA87003F906D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		79F327FE1D73EA87003F906D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		79F328001D73EA87003F906D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		79F328031D73EA87003F906D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		79F328051D73EA87003F906D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F3280C1D740E1D003F906D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79F3280D1D740E1D003F906D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79F3280F1D740E1D003F906D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		79F328101D740E1D003F906D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		79F328121D740E1D003F906D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79F328141D740E1D003F906D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		79F328161D740E1D003F906D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79F328171D740E1D003F906D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79F328181D740E1D003F906D /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79F328231D740FA7003F906D /* SFOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperation.h; sourceTree = "<group>"; };
+		79F328241D740FA7003F906D /* SFOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperation.m; sourceTree = "<group>"; };
+		79F328261D740FC9003F906D /* SFOperationAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationAdd.h; sourceTree = "<group>"; };
+		79F328271D740FC9003F906D /* SFOperationAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationAdd.m; sourceTree = "<group>"; };
+		79F328291D740FE6003F906D /* SFOperationSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationSub.h; sourceTree = "<group>"; };
+		79F3282A1D740FE6003F906D /* SFOperationSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationSub.m; sourceTree = "<group>"; };
+		79F3282C1D741008003F906D /* SFOperationMul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationMul.h; sourceTree = "<group>"; };
+		79F3282D1D741008003F906D /* SFOperationMul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationMul.m; sourceTree = "<group>"; };
+		79F3282F1D74101E003F906D /* SFOperationDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationDiv.h; sourceTree = "<group>"; };
+		79F328301D74101E003F906D /* SFOperationDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationDiv.m; sourceTree = "<group>"; };
+		79F328321D74165C003F906D /* SFOperationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationFactory.h; sourceTree = "<group>"; };
+		79F328331D74165C003F906D /* SFOperationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationFactory.m; sourceTree = "<group>"; };
+		79F328351D743148003F906D /* FMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperation.h; sourceTree = "<group>"; };
+		79F328361D743148003F906D /* FMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOperation.m; sourceTree = "<group>"; };
+		79F328371D743148003F906D /* FMOperationAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperationAdd.h; sourceTree = "<group>"; };
+		79F328381D743148003F906D /* FMOperationAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOperationAdd.m; sourceTree = "<group>"; };
+		79F328391D743148003F906D /* FMOperationDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperationDiv.h; sourceTree = "<group>"; };
+		79F3283A1D743148003F906D /* FMOperationDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOperationDiv.m; sourceTree = "<group>"; };
+		79F3283B1D743148003F906D /* FMOperationMul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperationMul.h; sourceTree = "<group>"; };
+		79F3283C1D743148003F906D /* FMOperationMul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOperationMul.m; sourceTree = "<group>"; };
+		79F3283D1D743148003F906D /* FMOperationSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperationSub.h; sourceTree = "<group>"; };
+		79F3283E1D743148003F906D /* FMOperationSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOperationSub.m; sourceTree = "<group>"; };
+		79F328441D743242003F906D /* FMFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFactory.h; sourceTree = "<group>"; };
+		79F328451D743242003F906D /* FMFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFactory.m; sourceTree = "<group>"; };
+		79F328471D74329A003F906D /* FMFactoryAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFactoryAdd.h; sourceTree = "<group>"; };
+		79F328481D74329A003F906D /* FMFactoryAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFactoryAdd.m; sourceTree = "<group>"; };
+		79F3284A1D7432AF003F906D /* FMFactorySub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFactorySub.h; sourceTree = "<group>"; };
+		79F3284B1D7432AF003F906D /* FMFactorySub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFactorySub.m; sourceTree = "<group>"; };
+		79F3284D1D7432BC003F906D /* FMFactoryMul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFactoryMul.h; sourceTree = "<group>"; };
+		79F3284E1D7432BC003F906D /* FMFactoryMul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFactoryMul.m; sourceTree = "<group>"; };
+		79F328501D7432C4003F906D /* FMFactoryDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMFactoryDiv.h; sourceTree = "<group>"; };
+		79F328511D7432C4003F906D /* FMFactoryDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMFactoryDiv.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,25 +107,97 @@
 		79F327F31D73EA87003F906D /* Factory-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				79F327F71D73EA87003F906D /* AppDelegate.h */,
-				79F327F81D73EA87003F906D /* AppDelegate.m */,
-				79F327FA1D73EA87003F906D /* ViewController.h */,
-				79F327FB1D73EA87003F906D /* ViewController.m */,
-				79F327FD1D73EA87003F906D /* Main.storyboard */,
-				79F328001D73EA87003F906D /* Assets.xcassets */,
-				79F328021D73EA87003F906D /* LaunchScreen.storyboard */,
-				79F328051D73EA87003F906D /* Info.plist */,
-				79F327F41D73EA87003F906D /* Supporting Files */,
+				79F3280B1D740E1D003F906D /* AppDelegate */,
+				79F3280E1D740E1D003F906D /* Classes */,
+				79F328111D740E1D003F906D /* Project File */,
 			);
 			path = "Factory-Demo";
 			sourceTree = "<group>";
 		};
-		79F327F41D73EA87003F906D /* Supporting Files */ = {
+		79F3280B1D740E1D003F906D /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
-				79F327F51D73EA87003F906D /* main.m */,
+				79F3280C1D740E1D003F906D /* AppDelegate.h */,
+				79F3280D1D740E1D003F906D /* AppDelegate.m */,
 			);
-			name = "Supporting Files";
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		79F3280E1D740E1D003F906D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				79F3280F1D740E1D003F906D /* ViewController.h */,
+				79F328101D740E1D003F906D /* ViewController.m */,
+				79F328221D740ED0003F906D /* Simple Factory */,
+				79F328211D740ED0003F906D /* Factory Method */,
+				79F328201D740ED0003F906D /* Abstract Factory */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		79F328111D740E1D003F906D /* Project File */ = {
+			isa = PBXGroup;
+			children = (
+				79F328121D740E1D003F906D /* Assets.xcassets */,
+				79F328131D740E1D003F906D /* LaunchScreen.storyboard */,
+				79F328151D740E1D003F906D /* Main.storyboard */,
+				79F328171D740E1D003F906D /* Info.plist */,
+				79F328181D740E1D003F906D /* main.m */,
+			);
+			path = "Project File";
+			sourceTree = "<group>";
+		};
+		79F328201D740ED0003F906D /* Abstract Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Abstract Factory";
+			sourceTree = "<group>";
+		};
+		79F328211D740ED0003F906D /* Factory Method */ = {
+			isa = PBXGroup;
+			children = (
+				79F328351D743148003F906D /* FMOperation.h */,
+				79F328361D743148003F906D /* FMOperation.m */,
+				79F328371D743148003F906D /* FMOperationAdd.h */,
+				79F328381D743148003F906D /* FMOperationAdd.m */,
+				79F328391D743148003F906D /* FMOperationDiv.h */,
+				79F3283A1D743148003F906D /* FMOperationDiv.m */,
+				79F3283B1D743148003F906D /* FMOperationMul.h */,
+				79F3283C1D743148003F906D /* FMOperationMul.m */,
+				79F3283D1D743148003F906D /* FMOperationSub.h */,
+				79F3283E1D743148003F906D /* FMOperationSub.m */,
+				79F328441D743242003F906D /* FMFactory.h */,
+				79F328451D743242003F906D /* FMFactory.m */,
+				79F328471D74329A003F906D /* FMFactoryAdd.h */,
+				79F328481D74329A003F906D /* FMFactoryAdd.m */,
+				79F3284A1D7432AF003F906D /* FMFactorySub.h */,
+				79F3284B1D7432AF003F906D /* FMFactorySub.m */,
+				79F3284D1D7432BC003F906D /* FMFactoryMul.h */,
+				79F3284E1D7432BC003F906D /* FMFactoryMul.m */,
+				79F328501D7432C4003F906D /* FMFactoryDiv.h */,
+				79F328511D7432C4003F906D /* FMFactoryDiv.m */,
+			);
+			path = "Factory Method";
+			sourceTree = "<group>";
+		};
+		79F328221D740ED0003F906D /* Simple Factory */ = {
+			isa = PBXGroup;
+			children = (
+				79F328321D74165C003F906D /* SFOperationFactory.h */,
+				79F328331D74165C003F906D /* SFOperationFactory.m */,
+				79F328231D740FA7003F906D /* SFOperation.h */,
+				79F328241D740FA7003F906D /* SFOperation.m */,
+				79F328261D740FC9003F906D /* SFOperationAdd.h */,
+				79F328271D740FC9003F906D /* SFOperationAdd.m */,
+				79F328291D740FE6003F906D /* SFOperationSub.h */,
+				79F3282A1D740FE6003F906D /* SFOperationSub.m */,
+				79F3282C1D741008003F906D /* SFOperationMul.h */,
+				79F3282D1D741008003F906D /* SFOperationMul.m */,
+				79F3282F1D74101E003F906D /* SFOperationDiv.h */,
+				79F328301D74101E003F906D /* SFOperationDiv.m */,
+			);
+			path = "Simple Factory";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F328041D73EA87003F906D /* LaunchScreen.storyboard in Resources */,
-				79F328011D73EA87003F906D /* Assets.xcassets in Resources */,
-				79F327FF1D73EA87003F906D /* Main.storyboard in Resources */,
+				79F3281E1D740E1D003F906D /* Info.plist in Resources */,
+				79F3281D1D740E1D003F906D /* Main.storyboard in Resources */,
+				79F3281B1D740E1D003F906D /* Assets.xcassets in Resources */,
+				79F3281C1D740E1D003F906D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,29 +271,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F327FC1D73EA87003F906D /* ViewController.m in Sources */,
-				79F327F91D73EA87003F906D /* AppDelegate.m in Sources */,
-				79F327F61D73EA87003F906D /* main.m in Sources */,
+				79F328341D74165C003F906D /* SFOperationFactory.m in Sources */,
+				79F328311D74101E003F906D /* SFOperationDiv.m in Sources */,
+				79F3283F1D743148003F906D /* FMOperation.m in Sources */,
+				79F3281A1D740E1D003F906D /* ViewController.m in Sources */,
+				79F3284F1D7432BC003F906D /* FMFactoryMul.m in Sources */,
+				79F328461D743242003F906D /* FMFactory.m in Sources */,
+				79F328421D743148003F906D /* FMOperationMul.m in Sources */,
+				79F328521D7432C4003F906D /* FMFactoryDiv.m in Sources */,
+				79F328401D743148003F906D /* FMOperationAdd.m in Sources */,
+				79F3282B1D740FE6003F906D /* SFOperationSub.m in Sources */,
+				79F328411D743148003F906D /* FMOperationDiv.m in Sources */,
+				79F3281F1D740E1D003F906D /* main.m in Sources */,
+				79F3282E1D741008003F906D /* SFOperationMul.m in Sources */,
+				79F328281D740FC9003F906D /* SFOperationAdd.m in Sources */,
+				79F328251D740FA7003F906D /* SFOperation.m in Sources */,
+				79F328491D74329A003F906D /* FMFactoryAdd.m in Sources */,
+				79F3284C1D7432AF003F906D /* FMFactorySub.m in Sources */,
+				79F328191D740E1D003F906D /* AppDelegate.m in Sources */,
+				79F328431D743148003F906D /* FMOperationSub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		79F327FD1D73EA87003F906D /* Main.storyboard */ = {
+		79F328131D740E1D003F906D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				79F327FE1D73EA87003F906D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		79F328021D73EA87003F906D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79F328031D73EA87003F906D /* Base */,
+				79F328141D740E1D003F906D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79F328151D740E1D003F906D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79F328161D740E1D003F906D /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -261,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Factory-Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Factory-Demo/Project File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liuxiaozhuang.Factory-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,7 +410,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Factory-Demo/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Factory-Demo/Project File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.liuxiaozhuang.Factory-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -298,6 +436,7 @@
 				79F3280A1D73EA87003F906D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
