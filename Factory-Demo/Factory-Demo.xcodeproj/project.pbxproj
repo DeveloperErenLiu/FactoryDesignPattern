@@ -19,7 +19,7 @@
 		79F3282B1D740FE6003F906D /* SFOperationSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3282A1D740FE6003F906D /* SFOperationSub.m */; };
 		79F3282E1D741008003F906D /* SFOperationMul.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3282D1D741008003F906D /* SFOperationMul.m */; };
 		79F328311D74101E003F906D /* SFOperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328301D74101E003F906D /* SFOperationDiv.m */; };
-		79F328341D74165C003F906D /* SFOperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328331D74165C003F906D /* SFOperationFactory.m */; };
+		79F328341D74165C003F906D /* SFFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328331D74165C003F906D /* SFFactory.m */; };
 		79F3283F1D743148003F906D /* FMOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328361D743148003F906D /* FMOperation.m */; };
 		79F328401D743148003F906D /* FMOperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F328381D743148003F906D /* FMOperationAdd.m */; };
 		79F328411D743148003F906D /* FMOperationDiv.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F3283A1D743148003F906D /* FMOperationDiv.m */; };
@@ -53,8 +53,8 @@
 		79F3282D1D741008003F906D /* SFOperationMul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationMul.m; sourceTree = "<group>"; };
 		79F3282F1D74101E003F906D /* SFOperationDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationDiv.h; sourceTree = "<group>"; };
 		79F328301D74101E003F906D /* SFOperationDiv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationDiv.m; sourceTree = "<group>"; };
-		79F328321D74165C003F906D /* SFOperationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFOperationFactory.h; sourceTree = "<group>"; };
-		79F328331D74165C003F906D /* SFOperationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFOperationFactory.m; sourceTree = "<group>"; };
+		79F328321D74165C003F906D /* SFFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFFactory.h; sourceTree = "<group>"; };
+		79F328331D74165C003F906D /* SFFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFFactory.m; sourceTree = "<group>"; };
 		79F328351D743148003F906D /* FMOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperation.h; sourceTree = "<group>"; };
 		79F328361D743148003F906D /* FMOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMOperation.m; sourceTree = "<group>"; };
 		79F328371D743148003F906D /* FMOperationAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMOperationAdd.h; sourceTree = "<group>"; };
@@ -184,8 +184,8 @@
 		79F328221D740ED0003F906D /* Simple Factory */ = {
 			isa = PBXGroup;
 			children = (
-				79F328321D74165C003F906D /* SFOperationFactory.h */,
-				79F328331D74165C003F906D /* SFOperationFactory.m */,
+				79F328321D74165C003F906D /* SFFactory.h */,
+				79F328331D74165C003F906D /* SFFactory.m */,
 				79F328231D740FA7003F906D /* SFOperation.h */,
 				79F328241D740FA7003F906D /* SFOperation.m */,
 				79F328261D740FC9003F906D /* SFOperationAdd.h */,
@@ -271,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79F328341D74165C003F906D /* SFOperationFactory.m in Sources */,
+				79F328341D74165C003F906D /* SFFactory.m in Sources */,
 				79F328311D74101E003F906D /* SFOperationDiv.m in Sources */,
 				79F3283F1D743148003F906D /* FMOperation.m in Sources */,
 				79F3281A1D740E1D003F906D /* ViewController.m in Sources */,

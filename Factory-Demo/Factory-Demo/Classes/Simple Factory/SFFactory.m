@@ -1,18 +1,19 @@
 //
-//  SFOperationFactory.m
+//  SFFactory.m
 //  Factory-Demo
 //
 //  Created by 刘小壮 on 16/8/29.
 //  Copyright © 2016年 刘小壮. All rights reserved.
 //
 
-#import "SFOperationFactory.h"
+#import "SFFactory.h"
+
 #import "SFOperationAdd.h"
 #import "SFOperationSub.h"
 #import "SFOperationMul.h"
 #import "SFOperationDiv.h"
 
-@implementation SFOperationFactory
+@implementation SFFactory
 
 /** 
  然而下面的方法，并不符合设计模式的开闭原则。在需求发生改变时，例如增加了一种新算法，方法内部还需要修改。

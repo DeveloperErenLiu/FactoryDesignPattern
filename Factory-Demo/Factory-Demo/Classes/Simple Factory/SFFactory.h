@@ -1,5 +1,5 @@
 //
-//  SFOperationFactory.h
+//  SFFactory.h
 //  Factory-Demo
 //
 //  Created by 刘小壮 on 16/8/29.
@@ -21,7 +21,7 @@ static NSString *kSFOperationDiv = @"SFOperationDiv";
 /** 
  简单工厂类，工厂类的职责就是根据外界需要，创建对应的抽象子类实例并返回给外界
  */
-@interface SFOperationFactory : NSObject
+@interface SFFactory : NSObject
 
 /** 
  工厂类的工厂方法，根据外界传进来的字符串，创建对应的抽象子类返回给外界

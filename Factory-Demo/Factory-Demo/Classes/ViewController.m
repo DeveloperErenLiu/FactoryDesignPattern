@@ -7,8 +7,12 @@
 //
 
 #import "ViewController.h"
-#import "SFOperationFactory.h"
+
+#import "SFFactory.h"
 #import "SFOperation.h"
+
+#import "FMFactoryAdd.h"
+#import "FMOperation.h"
 
 @implementation ViewController
 
@@ -24,7 +28,7 @@
      * 抽象子类：继承自抽象类，是具体操作的实现者，根据需求重写父类继承过来的方法。
      */
     
-    SFOperation *oper = [SFOperationFactory createOperationWithType:kSFOperationAdd];
+    SFOperation *oper = [SFFactory createOperationWithType:kSFOperationAdd];
     oper.numberOne = 13.f;
     oper.numberTwo = 24.f;
     NSLog(@"result : %f", [oper getResult]);
@@ -48,7 +52,10 @@
      所以在简单工厂模式的基础上，又发展出了工厂方法模式。工厂方法模式和简单工厂模式最大的不同在于，每一个抽象类都对应一个工厂类，由外界直接创建不同的工厂类。
      */
     
-    
+    FMOperation *oper = [FMFactoryAdd createOperation];
+    oper.numberOne = 13.f;
+    oper.numberTwo = 24.f;
+    NSLog(@"result : %f", [oper getResult]);
 }
 
 /** 
