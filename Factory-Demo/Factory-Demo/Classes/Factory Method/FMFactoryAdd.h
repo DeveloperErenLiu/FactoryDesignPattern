@@ -8,6 +8,9 @@
 
 #import "FMFactory.h"
 
+/** 
+ 加法抽象工厂子类
+ */
 @interface FMFactoryAdd : FMFactory
 
 @end

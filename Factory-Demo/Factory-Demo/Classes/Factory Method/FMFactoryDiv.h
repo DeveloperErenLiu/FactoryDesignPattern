@@ -8,6 +8,9 @@
 
 #import "FMFactory.h"
 
+/**
+ 除法抽象工厂子类
+ */
 @interface FMFactoryDiv : FMFactory
 
 @end

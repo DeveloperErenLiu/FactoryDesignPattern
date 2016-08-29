@@ -14,6 +14,19 @@
 #import "FMFactoryAdd.h"
 #import "FMOperation.h"
 
+#import "AFUser.h"
+#import "AFCity.h"
+#import "AFFactory.h"
+#import "AFSqliteFactory.h"
+#import "AFUserInfo.h"
+#import "AFSearchInfo.h"
+#import "AFSettingsInfo.h"
+
+/** 
+ 这个Demo工程对应工厂模式系列文章，包括简单工厂、工厂方法、抽象工厂三种设计模式。
+ 由于三种设计模式需要创建大量类文件，为了区分三种设计模式的类，所以用模式缩写前缀作区分。例如Simple Factory模式，用SF做前缀。
+ */
+
 @implementation ViewController
 
 /** 
@@ -63,6 +76,34 @@
  */
 - (IBAction)abstructFactoryAction:(UIButton *)sender {
     
+    /** 
+     抽象工厂模式包含四部分：
+     * 抽象工厂类：定义创建抽象子类的具体行为，根据系列中不同类型的抽象子类可能会有多种行为。
+     * 工厂子类：继承自抽象工厂类，根据当前抽象子类对应的系列，重写父类定义的对应行为。对应的抽象子类系列不同，行为的实现方式也不同。
+     * 抽象类：定义当前类型抽象子类的操作，子类继承父类完成具体的操作。在抽象工厂模式中，可能会有多种抽象类的定义。
+     * 抽象子类：根据当前类型继承自对应的抽象类，并根据系列的不同重写抽象类定义的实现。
+     */
+    
+    /** 
+     抽象工厂模式和其名字一样，理解起来非常抽象。在抽象工厂模式中存在一系列的抽象类和抽象子类，由当前系列对应的工厂子类进行实例化。抽象工厂讲起来比较复杂，具体还是看博客更加详细。
+     在Demo中体现了本地持久化方式的切换需求，分别对应着SQLite系列和CoreData系列。
+     */
+    
+    /** 
+     抽象工厂模式虽然复杂，但是功能很强大。在Demo的例子中，一个项目中一般只会同时存在一种主流持久化方式，所以可以通过typedef定义工厂类的方式，实现一行代码切换整个项目的持久化存储方案。
+     */
+    
+    AFUser *user = [AFUser new];
+    AFCity *city = [AFCity new];
+    
+    AFFactory *factory           = [AFSqliteFactory new];
+    AFUserInfo *userInfo         = [factory createUserInfo];
+    AFSearchInfo *searchInfo     = [factory createSearchInfo];
+    AFSettingsInfo *settingsInfo = [factory createSettingsInfo];
+    
+    [userInfo setUserName:user];
+    [searchInfo setSearchCity:city];
+    [settingsInfo resetAllSettings];
 }
 
 @end
